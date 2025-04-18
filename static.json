@@ -5,6 +5,6 @@
       }
     },
     "routes": {
-      "/campain/**": "/campain/index.html"
+      "/campain/**": "/campain/song.html"
     }
 }  
