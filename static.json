@@ -1,5 +1,10 @@
 {
+    "headers": {
+      "/**": {
+        "Access-Control-Allow-Origin": "*"
+      }
+    },
     "routes": {
-      "/campain/*": "index.html"
+      "/campain/**": "/campain/index.html"
     }
 }  
