@@ -358,7 +358,7 @@
         errorText.textContent = "";
         document.getElementById("popup").style.display = "block";
         const randomPath = generateRandomPath();
-        const generatedLink = `${window.location.origin}/campain/v=${randomPath}`;
+        const generatedLink = `${window.location.origin}/campain/?v=${randomPath}`;
         document.getElementById("generatedLink").value = generatedLink;
           setTimeout(() => {
             document.getElementById("popup").style.display = "none";
