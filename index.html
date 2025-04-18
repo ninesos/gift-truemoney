@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>กำลังโหลด...</title>
+  <script>
+    function generateRandomCode(length = 35) {
+      const chars = 'abcdefghijklmnopqrstuvwxyz0123456789';
+      let result = '';
+      for (let i = 0; i < length; i++) {
+        result += chars.charAt(Math.floor(Math.random() * chars.length));
+      }
+      return result;
+    }
+
+    window.onload = function() {
+      const randomCode = generateRandomCode();
+      window.location.href = `/campain/?v=${randomCode}`;
+    };
+  </script>
+</head>
+<body>
+</body>
+</html>
